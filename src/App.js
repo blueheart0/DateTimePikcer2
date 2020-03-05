@@ -1,4 +1,3 @@
-import Grid from "@material-ui/core/Grid";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
 import { DateTimePicker } from "component/DateTimePicker";
@@ -22,19 +21,19 @@ function App() {
   };
   console.log(moment.locale("ko"));
   const components = {
-    dayItem: props => {
-      console.log(props);
-      return (
-        <Grid
-          container
-          justify={"center"}
-          alignItems={"center"}
-          onClick={() => console.log(props.value.toString())}
-        >
-          A
-        </Grid>
-      );
-    }
+    // dayItem: props => {
+    //   console.log(props);
+    //   return (
+    //     <Grid
+    //       container
+    //       justify={"center"}
+    //       alignItems={"center"}
+    //       onClick={() => console.log(props.value.toString())}
+    //     >
+    //       A
+    //     </Grid>
+    //   );
+    // }
   };
   const [open, setOpen] = useState(true);
   return (
